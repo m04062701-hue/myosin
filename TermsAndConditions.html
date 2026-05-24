@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - PerfectStop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0c10;
+            --container-bg: rgba(26, 29, 38, 0.65);
+            --neon-cyan: #00e5ff;
+            --neon-purple: #d500f9;
+            --text-primary: #f5f6f8;
+            --text-secondary: #a0aec0;
+            --border-glow: rgba(0, 229, 255, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(213, 0, 249, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(0, 229, 255, 0.08) 0%, transparent 40%);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .logo-glow {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+            border-radius: 24px;
+            margin: 0 auto 20px;
+            box-shadow: 0 0 30px rgba(0, 229, 255, 0.35);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 2.2rem;
+            letter-spacing: -1px;
+            color: #fff;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 2.5rem;
+            letter-spacing: -0.5px;
+            background: linear-gradient(to right, #ffffff, #e2e8f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: var(--neon-cyan);
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            text-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+        }
+
+        .last-updated {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .content-card {
+            background-color: var(--container-bg);
+            border-radius: 28px;
+            border: 1px solid var(--border-glow);
+            padding: 50px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        section:last-of-type {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: var(--neon-purple);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--neon-purple);
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 16px;
+            padding-left: 10px;
+        }
+
+        li {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--neon-cyan);
+            font-weight: bold;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.05), rgba(213, 0, 249, 0.03));
+            border-radius: 16px;
+            border-left: 4px solid var(--neon-cyan);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: var(--text-primary);
+        }
+
+        a {
+            color: var(--neon-cyan);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #fff;
+            text-shadow: 0 0 8px var(--neon-cyan);
+        }
+
+        .contact-email {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 8px 16px;
+            margin-top: 5px;
+            font-size: 0.95rem;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #4a5568;
+        }
+
+        @media (max-width: 768px) {
+            .content-card {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <div class="logo-glow">🎯</div>
+        <p class="subtitle">PerfectStop Mobile Game</p>
+        <h1>Terms & Conditions</h1>
+        <p class="last-updated">Last Updated: May 24, 2026</p>
+    </div>
+
+    <div class="content-card">
+        <section>
+            <p>These Terms and Conditions ("Terms") govern your download, installation, and use of the PerfectStop mobile application ("the App").</p>
+            <p>Please read these Terms carefully before using the App. By downloading, accessing, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use the App.</p>
+        </section>
+
+        <section>
+            <h2>1. Intellectual Property License</h2>
+            <p>All rights, titles, and interests in the App, including but not limited to source code, gameplay mechanics, visual interfaces, graphics, logos, sounds, and standard assets, are owned exclusively by the developer of PerfectStop.</p>
+            <ul>
+                <li>You are granted a personal, limited, non-exclusive, non-transferable, revocable license to download and play the App on your personal device.</li>
+                <li>You may not copy, decompile, modify, distribute, reverse engineer, or sell any component of the App.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. In-App Purchases & Virtual Goods</h2>
+            <p>PerfectStop offers optional digital upgrades (e.g., "Remove Ads & Unlock All Stages") processed via Apple's billing network.</p>
+            <ul>
+                <li><strong>Billing:</strong> Payment processing is handled exclusively by Apple. We never access, capture, or store your payment details.</li>
+                <li><strong>Refunds:</strong> All purchases are final, non-refundable, and non-transferable, except as dictated by Apple Store policies or local consumer rights laws.</li>
+                <li><strong>Purchase Restoration:</strong> Purchases are bound to your Apple ID and can be restored for free upon reinstallation or device swap.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Third-Party Ads (AdMob)</h2>
+            <p>We work with Google AdMob to show advertising within the App to support the developer's costs. By playing the game, you acknowledge that we do not endorse or control the third-party products advertised, nor are we liable for content displayed in those advertisements.</p>
+        </section>
+
+        <section>
+            <h2>4. Limitation of Liability</h2>
+            <p>PerfectStop is provided to you on an "AS IS" and "AS AVAILABLE" basis. We offer no guarantees regarding uninterrupted or error-free performance. In no event shall the developer be held responsible for any direct, indirect, incidental, or consequential damages resulting from your use of the App.</p>
+        </section>
+
+        <section>
+            <h2>5. Revisions and Termination</h2>
+            <p>We reserve the right to update or replace these Terms at any time. Continued usage of the App following adjustments denotes your agreement to the modified Terms. We may also suspend or terminate access to the App at any time without notice.</p>
+        </section>
+
+        <section>
+            <h2>6. Contact Us</h2>
+            <p>If you have any questions, disputes, or suggestions regarding these terms, please contact us at:</p>
+            <div class="contact-email">
+                <span>✉</span>
+                <a href="mailto:monerxxy1@gmail.com">monerxxy1@gmail.com</a>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 PerfectStop. All Rights Reserved.
+    </div>
+</div>
+
+</body>
+</html>
